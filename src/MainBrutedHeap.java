@@ -1,29 +1,17 @@
 public class MainBrutedHeap {
-
     public static void main(String[] args) {
-        int[] p;
         int sz = 4;
-
-        if (args.length < 1) {
+        if (args.length < 1)
             return;
-        }
-
         sz = Integer.parseInt(args[0]);
-
-        if (sz < 1) {
+        if (sz < 1)
             sz = 4;
-        }
-
-        p = new int[sz];
-
+        int[] p = new int[sz];
         for (int i = 0; i < sz; ++i) {
             p[i] = i + 1;
         }
-
         Permutation.func_permHeap(sz, p, sz);
-        System.out.println("\n");
-        return;
-
+        System.out.println();
     }
-
 }
+
