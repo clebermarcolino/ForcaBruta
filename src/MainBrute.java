@@ -10,15 +10,19 @@ public class MainBrute {
             p[i] = i + 1;
         }
 
-        long totalTime = 0;
+        long totalTime = 0; // Variável para armazenar o tempo total de execução
+
+        // Executa o código várias vezes para calcular o tempo médio
         int numExecutions = 6; // Número de execuções a serem realizadas
         for (int i = 0; i < numExecutions; i++) {
-            long startTime = System.currentTimeMillis();
+            long startTime = System.currentTimeMillis(); // Tempo de início
             Permutation.func_perm(sz, p, 0);
 
-            long endTime = System.currentTimeMillis();
-            long elapsedTime = endTime - startTime;
+            long endTime = System.currentTimeMillis(); // Tempo de fim
+            long elapsedTime = endTime - startTime; // Tempo decorrido
             totalTime += elapsedTime;
+
+            System.out.println("\n--------------------------------------");
         }
 
         // Calcula o tempo médio de execução em milissegundos
