@@ -10,16 +10,16 @@ public class MainBrute {
             p[i] = i + 1;
         }
 
-        long totalTime = 0; // Variável para armazenar o tempo total de execução
+        long totalTime = 0;
 
-        // Executa o código várias vezes para calcular o tempo médio
-        int numExecutions = 6; // Número de execuções a serem realizadas
+
+        int numExecutions = 6;
         for (int i = 0; i < numExecutions; i++) {
-            long startTime = System.currentTimeMillis(); // Tempo de início
+            long startTime = System.currentTimeMillis();
             Permutation.func_perm(sz, p, 0);
 
-            long endTime = System.currentTimeMillis(); // Tempo de fim
-            long elapsedTime = endTime - startTime; // Tempo decorrido
+            long endTime = System.currentTimeMillis();
+            long elapsedTime = endTime - startTime;
             totalTime += elapsedTime;
 
             System.out.println("\n--------------------------------------");
@@ -28,7 +28,7 @@ public class MainBrute {
         // Calcula o tempo médio de execução em milissegundos
         double averageTime = (double) totalTime / numExecutions;
 
-        System.out.println("\nAverage execution time: " + averageTime + " milliseconds");
+        System.out.println("\ntempo de execução: " + averageTime + " milliseconds");
     }
 }
 
