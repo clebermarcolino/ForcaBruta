@@ -26,6 +26,3 @@ Isso gerará e imprimirá as permutações de tamanho 4 na saída padrão.
 
 ### Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias, correções de bugs ou novos recursos.
-
-### Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
